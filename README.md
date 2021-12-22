@@ -1,6 +1,6 @@
 # Sistema de login y perfil
 
-Permite a los dos usuarios registrados en la base de datos iniciar sesión en sus cuentas y ver su perfil. El perfil contiene sus datos personales (nombre, apellido, dni e email).
+Permite a los dos usuarios registrados en la base de datos iniciar sesión en sus cuentas y ver su perfil. El perfil contiene sus datos personales (nombre, apellido, DNI e email).
 
 ## Cómo instalar / ejecutar
 
