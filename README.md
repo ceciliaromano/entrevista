@@ -1,70 +1,47 @@
-# Getting Started with Create React App
+# Sistema de login y perfil
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Permite a los dos usuarios registrados en la base de datos iniciar sesión en sus cuentas y ver su perfil. El perfil contiene sus datos personales (nombre, apellido, dni e email).
 
-## Available Scripts
+## Cómo instalar / ejecutar
 
-In the project directory, you can run:
+### Requisitos
+- Instalar  [NodeJS](https://nodejs.org)
+- Instalar [XAMPP](https://www.apachefriends.org/es/download.html)
 
-### `npm start`
+### Pasos
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+1. Clonar este proyecto y guardarlo en el directorio que desee.
+2. Clonar el [BackEnd](https://github.com/ceciliaromano/entrevista-php-backend) en la carpeta htdocs de XAMPP.
+3. Ejecutar XAMPP y activar el servidor Apache y MySQL.
+4. Abrir terminal en la raiz (donde se encuentra el archivo App.js) y ejecutar lo siguiente:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+`npm install`
 
-### `npm test`
+Esto instalará todas las dependencias necesarias
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Luego ejecutar
 
-### `npm run build`
+`npm start`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Esto abrirá el servidor local de ReactJS
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Instrucciones de uso
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Ingresar el usuario y contraseña del usuario en el formulario, y luego iniciar sesión.
+Una vez dentro del perfil se puede editar los datos aprentado el botón "Editar datos", esto abrirá un formulario donde se puede ingresar los datos que se desea cambiar.
+Se puede la cantidad de datos que se desee, no hace falta llenarlos todos.
 
-### `npm run eject`
+### Video ilustrativo
+https://user-images.githubusercontent.com/72151846/147143235-c8e4f850-2b35-4a67-ac74-11874ab93901.mp4
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Errores conocidos y mejoras
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Errores
+- Al guardar cambios en ocaciones no se reflejan correctamente los cambios realizados, sin embargo la base de datos los ha modificado.
+- Cuando el usuario intenta ingresar el mismo email que el otro usuario posee se le prohibe realizar la acción y se le muestra un cartel al respecto, este cartel no logra desaparecer una vez se ha corregido el error.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+### Mejoras
+- Eliminar los errores existentes.
+- Generar un sistema de registro de usuarios nuevos.
+- Mejorar el diseño UI.
+- Generar rutas en la url principal y permitir que la sesión del usuario se mantenga abierta por una cantidad determinada de tiempo.
