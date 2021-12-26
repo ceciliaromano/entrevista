@@ -30,6 +30,9 @@ Esto abrirá el servidor local de ReactJS
 Ingresar el usuario y contraseña del usuario en el formulario, y luego iniciar sesión.
 Una vez dentro del perfil se puede editar los datos aprentado el botón "Editar datos", esto abrirá un formulario donde se puede ingresar los datos que se desea cambiar.
 Se puede la cantidad de datos que se desee, no hace falta llenarlos todos.
+Usuarios utilizados:
+Usuario 1: test1@gmail.com - Contraseña: contrasena1
+Usuario 1: test2@gmail.com - Contraseña: contrasena2
 
 ### Video ilustrativo
 https://user-images.githubusercontent.com/72151846/147143235-c8e4f850-2b35-4a67-ac74-11874ab93901.mp4
