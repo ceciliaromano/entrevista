@@ -33,6 +33,7 @@ Se puede la cantidad de datos que se desee, no hace falta llenarlos todos.
 
 #### Usuarios utilizados:
 Usuario 1: test1@gmail.com - Contraseña: contrasena1
+
 Usuario 1: test2@gmail.com - Contraseña: contrasena2
 
 ### Video ilustrativo
